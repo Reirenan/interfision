@@ -3,7 +3,7 @@ package br.com.interfision.interfision.core.exceptions;
 public class ResponsavelNotFoundException extends ModelNotFoundException {
 
     public ResponsavelNotFoundException() {
-        super("Skill not found");
+        super("Responsavel not found");
     }
     
     public ResponsavelNotFoundException(String message) {

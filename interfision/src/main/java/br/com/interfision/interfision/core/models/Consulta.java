@@ -3,10 +3,10 @@ package br.com.interfision.interfision.core.models;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import jakarta.persistence.CascadeType;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -24,14 +24,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Consultas {
+public class Consulta {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private Double precoConsulta;
 
     @Column(nullable = false)
@@ -46,8 +46,9 @@ public class Consultas {
     @Column(nullable = true, columnDefinition = "TEXT")
     private String descricao;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "pacientes_id", nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "paciente_id")
+    @JsonIgnore
     private Paciente paciente;
 
    /* @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

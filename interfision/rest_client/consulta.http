@@ -1,0 +1,41 @@
+### GET todas as consultas
+GET http://localhost:8080/api/consultas
+Accept: application/json
+
+### GET consulta por ID
+GET http://localhost:8080/api/consultas/{id}
+Accept: application/json
+
+### POST criar nova consulta
+POST http://localhost:8080/api/consultas
+Content-Type: application/json
+Accept: application/json
+
+{
+  "precoConsulta": 150.00,
+  "dataConsulta": "2024-12-01",
+  "horario": "14:30:00",
+  "tipoConsulta": "Ortopedia",
+  "descricao": "Consulta inicial para avaliação.",
+  "pacienteNome": "João Silva",
+  "pacienteId":1
+}
+
+
+### PUT atualizar consulta por ID
+PUT http://localhost:8080/api/consultas/{id}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "precoConsulta": 200.00,
+  "dataConsulta": "2024-12-02",
+  "horario": "10:00:00",
+  "tipoConsulta": "Fisioterapia",
+  "descricao": "Sessão de fisioterapia para reabilitação.",
+  "pacienteId": 1
+}
+
+### DELETE consulta por ID
+DELETE http://localhost:8080/api/consultas/{id}
+Accept: application/json
