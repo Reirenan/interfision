@@ -1,0 +1,40 @@
+### GET all patients
+GET http://localhost:8080/api/pacientes
+Accept: application/json
+
+### GET a single patient by ID
+GET http://localhost:8080/api/pacientes/1
+Accept: application/json
+
+### Create a new patient
+POST http://localhost:8080/api/pacientes
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nome": "João Silva",
+    "dataNascimento": "1990-01-01",
+    "telefone": "123456789",
+    "endereco": "Rua das Flores, 123",
+    "responsavelId": 1
+}
+
+
+
+### Update an existing patient by ID
+PUT http://localhost:8080/api/pacientes/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "João Silva",
+  "dataNascimento": "1990-01-01",
+  "telefone": "123456789",
+  "endereco": "Rua das Flores, 123",
+  "responsavelId": 1
+}
+
+
+### Delete a patient by ID
+DELETE http://localhost:8080/api/pacientes/1
+Accept: application/json

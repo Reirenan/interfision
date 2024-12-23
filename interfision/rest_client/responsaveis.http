@@ -1,0 +1,37 @@
+### GET todos os responsáveis
+GET http://localhost:8080/api/responsaveis
+Accept: application/json
+
+### GET responsável por ID
+GET http://localhost:8080/api/responsaveis/{id}
+Accept: application/json
+
+### POST criar novo responsável
+POST http://localhost:8080/api/responsaveis
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "Maria Santos",
+  "dataNascimento": "1980-05-15",
+  "telefone": "123456789",
+  "endereco": "Rua das Flores, 123",
+  "email": "maria.santos@example.com"
+}
+
+### PUT atualizar responsável por ID
+PUT http://localhost:8080/api/responsaveis/{id}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "Maria Santos Atualizada",
+  "dataNascimento": "1980-05-15",
+  "telefone": "987654321",
+  "endereco": "Rua das Palmeiras, 456",
+  "email": "maria.atualizada@example.com"
+}
+
+### DELETE responsável por ID
+DELETE http://localhost:8080/api/responsaveis/{id}
+Accept: application/json
