@@ -1,4 +1,4 @@
-package br.com.interfision.interfision.api.consultas.common.handlers;
+package br.com.interfision.interfision.api.profissionais.common.handlers;
 
 import java.util.stream.Collectors;
 
@@ -8,15 +8,14 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import br.com.interfision.interfision.api.pacientes.common.dtos.ErrorResponse;
-import br.com.interfision.interfision.api.pacientes.common.dtos.ValidationErrorResponse;
+import br.com.interfision.interfision.api.profissionais.common.dtos.ErrorResponse;
+import br.com.interfision.interfision.api.profissionais.common.dtos.ValidationErrorResponse;
 import br.com.interfision.interfision.core.exceptions.ModelNotFoundException;
 
-
 @RestControllerAdvice
-public class ConsultaApiExceptionHandler {
+public class ProfissionalApiExceptionHandler {
 
-    @ExceptionHandler(br.com.interfision.interfision.core.exceptions.ModelNotFoundException.class)
+    @ExceptionHandler(ModelNotFoundException.class)
     @ResponseStatus(code = HttpStatus.NOT_FOUND)
     public ErrorResponse handleModelNotFoundException(
         ModelNotFoundException exception
@@ -45,5 +44,4 @@ public class ConsultaApiExceptionHandler {
             .errors(errors)
             .build();
     }
-    
 }

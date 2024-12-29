@@ -12,13 +12,12 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "nome": "João Silva",
-    "dataNascimento": "1990-01-01",
-    "telefone": "123456789",
-    "endereco": "Rua das Flores, 123",
-    "responsavelId": 1
+  "nome": "João Silva",
+  "dataNascimento": "1990-01-01",
+  "telefone": "123456789",
+  "endereco": "Rua das Flores, 123",
+  "responsavelId": 1
 }
-
 
 
 ### Update an existing patient by ID

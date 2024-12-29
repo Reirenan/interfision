@@ -1,8 +1,6 @@
-package br.com.interfision.interfision.api.consultas.common.dtos;
+package br.com.interfision.interfision.api.profissionais.common.dtos;
 
 import java.time.LocalDateTime;
-import java.util.List;
-import java.util.Map;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,13 +11,11 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ValidationErrorResponse {
+public class ErrorResponse {
 
     private String message;
 
     @Builder.Default
     private LocalDateTime timestamp = LocalDateTime.now();
-
-    private Map<String, List<String>> errors;
     
 }

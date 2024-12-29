@@ -1,0 +1,41 @@
+### GET all professionals
+GET http://localhost:8080/api/profissionais
+Accept: application/json
+
+### GET a single professional by ID
+GET http://localhost:8080/api/profissionais/1
+Accept: application/json
+
+### Create a new professional
+POST http://localhost:8080/api/profissionais
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nome": "Maria Oliveira",
+    "dataNascimento": "1985-03-15",
+    "telefone": "123456889",
+    "email": "maria.oliei@example.com",
+    "registroProfissional": "123488-SP",
+    "anosExperiencia": 10,
+    "salario": 8000.00
+}
+
+### Update an existing professional by ID
+PUT http://localhost:8080/api/profissionais/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nome": "Mario Oliveira",
+    "dataNascimento": "1988-03-15",
+    "telefone": "989654351",
+    "email": "maria.oliveiroa@example.com",
+    "registroProfissional": "123856-SP",
+    "anosExperiencia": 12,
+    "salario": 8500.00
+}
+
+### Delete a professional by ID
+DELETE http://localhost:8080/api/profissionais/1
+Accept: application/json

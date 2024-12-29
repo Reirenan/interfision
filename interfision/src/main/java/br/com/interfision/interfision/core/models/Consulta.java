@@ -47,8 +47,6 @@ public class Consulta {
     private String descricao;
 
     @ManyToOne
-    @JoinColumn(name = "paciente_id")
-    @JsonIgnore
     private Paciente paciente;
 
    /* @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

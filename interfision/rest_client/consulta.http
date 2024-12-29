@@ -3,7 +3,7 @@ GET http://localhost:8080/api/consultas
 Accept: application/json
 
 ### GET consulta por ID
-GET http://localhost:8080/api/consultas/{id}
+GET http://localhost:8080/api/consultas/1
 Accept: application/json
 
 ### POST criar nova consulta
@@ -12,7 +12,6 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "precoConsulta": 150.00,
   "dataConsulta": "2024-12-01",
   "horario": "14:30:00",
   "tipoConsulta": "Ortopedia",
@@ -33,7 +32,9 @@ Accept: application/json
   "horario": "10:00:00",
   "tipoConsulta": "Fisioterapia",
   "descricao": "Sessão de fisioterapia para reabilitação.",
-  "pacienteId": 1
+  "pacienteId": 1,
+  "profissionalId": 1
+
 }
 
 ### DELETE consulta por ID

@@ -1,5 +1,6 @@
 package br.com.interfision.interfision.core.models;
 
+import java.util.List;
 import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -49,5 +50,5 @@ public class Paciente {
     private Responsavel responsavel;
 
     @OneToMany(mappedBy = "paciente",fetch = FetchType.LAZY)
-    private Set<Consulta> consultas;
+    private List<Consulta> consultas;
 }

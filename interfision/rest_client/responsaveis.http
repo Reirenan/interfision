@@ -12,7 +12,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "nome": "Maria Santos",
+  "nome": "Maria Santuana",
   "dataNascimento": "1980-05-15",
   "telefone": "123456789",
   "endereco": "Rua das Flores, 123",
