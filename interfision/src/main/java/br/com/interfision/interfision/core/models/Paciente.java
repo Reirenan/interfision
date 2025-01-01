@@ -1,10 +1,12 @@
 package br.com.interfision.interfision.core.models;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -49,6 +51,4 @@ public class Paciente {
     @JsonIgnore
     private Responsavel responsavel;
 
-    @OneToMany(mappedBy = "paciente",fetch = FetchType.LAZY)
-    private List<Consulta> consultas;
 }

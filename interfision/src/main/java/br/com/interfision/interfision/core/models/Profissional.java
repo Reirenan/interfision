@@ -1,5 +1,8 @@
 package br.com.interfision.interfision.core.models;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,7 +21,7 @@ public class Profissional {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
-    private Integer id;
+    private Long id;
 
     @Column(nullable = false, length = 45)
     private String nome;
@@ -42,4 +45,6 @@ public class Profissional {
     @Column(nullable = false)
     private Double salario;
     
+    @OneToMany(mappedBy = "profissional",cascade = CascadeType.ALL)
+    private Set<Consulta> consultas = new HashSet();
 }

@@ -1,8 +1,10 @@
 package br.com.interfision.interfision.core.models;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -43,6 +45,5 @@ public class Responsavel {
     @Column(nullable = false, unique = true, length = 50)
     private String email;
 
-    @OneToMany(mappedBy = "responsavel",fetch = FetchType.LAZY)
-    private List<Paciente> pacientes;
+    
 }

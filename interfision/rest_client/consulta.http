@@ -12,13 +12,10 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "dataConsulta": "2024-12-01",
-  "horario": "14:30:00",
-  "tipoConsulta": "Ortopedia",
-  "descricao": "Consulta inicial para avaliação.",
-  "pacienteNome": "João Silva",
-  "pacienteId":1
+  "pacienteId": 1,
+  "profissionalId": 1
 }
+
 
 
 ### PUT atualizar consulta por ID
