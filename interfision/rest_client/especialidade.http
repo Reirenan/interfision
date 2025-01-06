@@ -1,0 +1,33 @@
+### GET todas as especialidades
+GET http://localhost:8080/api/especialidades
+Accept: application/json
+
+### GET especialidade por ID
+GET http://localhost:8080/api/especialidades/{id}
+Accept: application/json
+
+### POST criar nova especialidade
+POST http://localhost:8080/api/especialidades
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "Ortopedia",
+  "descricao": "Especialidade voltada para o tratamento de doenças do sistema musculoesquelético.",
+  "precoEspecialidade": 150.00
+}
+
+### PUT atualizar especialidade por ID
+PUT http://localhost:8080/api/especialidades/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "Fisioterapia",
+  "descricao": "Reabilitação física para melhorar mobilidade e qualidade de vida.",
+  "precoEspecialidade": 100.00
+}
+
+### DELETE especialidade por ID
+DELETE http://localhost:8080/api/especialidades/{id}
+Accept: application/json

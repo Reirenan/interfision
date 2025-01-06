@@ -21,6 +21,9 @@ public class ConsultaRequest {
     @NotNull(message = "O ID do profissional não pode estar vazio.")
     private Long profissionalId;
 
+    @NotNull(message = "O ID da especialidade não pode estar vazio.")
+    private Long especialidadeId;
+
     @NotNull(message = "A data da consulta não pode estar vazia.")
     private LocalDate data; // Data da consulta
 

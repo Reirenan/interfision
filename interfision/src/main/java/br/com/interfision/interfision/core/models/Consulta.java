@@ -1,5 +1,6 @@
 package br.com.interfision.interfision.core.models;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -38,6 +39,10 @@ public class Consulta {
     @JoinColumn(name = "profissional_id")
     private Profissional profissional;
 
+    @ManyToOne
+    @JoinColumn(name = "especialidade_id")
+    private Especialidade especialidade;
+
     @Column(nullable = false)
     private LocalDate data; // Data da consulta
 
@@ -48,5 +53,8 @@ public class Consulta {
     private String observacoes; // Observações adicionais sobre a consulta
 
     @Column(nullable = false, length = 50)
-    private String status; // Status da consulta (ex.: "Agendada", "Concluída", "Cancelada")
+    private String status;
+    
+    @Column(nullable = true)
+    private BigDecimal precoConsulta; // Preço total da consulta// Status da consulta (ex.: "Agendada", "Concluída", "Cancelada")
 }

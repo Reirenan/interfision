@@ -3,7 +3,7 @@ GET http://localhost:8080/api/consultas
 Accept: application/json
 
 ### GET consulta por ID
-GET http://localhost:8080/api/consultas/1
+GET http://localhost:8080/api/consultas/14
 Accept: application/json
 
 ### POST criar nova consulta
@@ -13,8 +13,14 @@ Accept: application/json
 
 {
   "pacienteId": 1,
-  "profissionalId": 1
+  "profissionalId": 1,
+  "especialidadeId": 1,
+  "data": "2025-01-01",
+  "horario": "10:30",
+  "observacoes": "Paciente com dores na coluna.",
+  "status": "Agendada"
 }
+
 
 
 
