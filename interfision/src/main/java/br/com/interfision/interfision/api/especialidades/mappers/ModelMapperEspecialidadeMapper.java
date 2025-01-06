@@ -4,8 +4,6 @@ import org.springframework.stereotype.Component;
 import br.com.interfision.interfision.api.especialidades.dtos.EspecialidadeRequest;
 import br.com.interfision.interfision.api.especialidades.dtos.EspecialidadeResponse;
 import br.com.interfision.interfision.core.models.Especialidade;
-import br.com.interfision.interfision.core.repositories.ConsultaRepository;
-import br.com.interfision.interfision.core.repositories.PacienteRepository;
 import lombok.RequiredArgsConstructor;
 
 @Component

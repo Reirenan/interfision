@@ -1,6 +1,5 @@
 package br.com.interfision.interfision.core.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 

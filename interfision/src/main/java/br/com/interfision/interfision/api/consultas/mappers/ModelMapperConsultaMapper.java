@@ -1,6 +1,5 @@
 package br.com.interfision.interfision.api.consultas.mappers;
 
-import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
 import br.com.interfision.interfision.api.consultas.dtos.ConsultaRequest;
