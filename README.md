@@ -8,8 +8,8 @@ Este é um sistema backend desenvolvido para gerenciar os processos administrati
 1. [Funcionalidades](#funcionalidades)
 2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 3. [Configuração do Ambiente](#configuração-do-ambiente)
-    3.1. [Pré-requisitos](#pré-requisitos)
-    3.2. [Configuração do Banco de Dados](#configuração-do-banco-de-dados)
+    - [Pré-requisitos](#pré-requisitos)
+    - [Configuração do Banco de Dados](#configuração-do-banco-de-dados)
 4. [Como Executar](#como-executar)
 5. [Contribuição](#contribuição)
 6. [Autor e Licença](#autor-e-licença)
@@ -100,4 +100,3 @@ Contribuições são bem-vindas! Para contribuir, siga os passos abaixo:
 
 **Autor**: Reirenan  
 **Licença**: MIT
-
