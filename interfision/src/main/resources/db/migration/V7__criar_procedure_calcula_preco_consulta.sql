@@ -1,4 +1,4 @@
-CREATE DEFINER=`root`@`localhost` PROCEDURE `CalcularPrecoConsulta`(
+CREATE DEFINER=root@localhost PROCEDURE CalcularPrecoConsulta(
     IN especialidadeID INT, 
     IN profissionalID INT, 
     OUT precoConsulta DOUBLE

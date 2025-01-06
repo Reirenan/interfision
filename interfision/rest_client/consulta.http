@@ -3,7 +3,7 @@ GET http://localhost:8080/api/consultas
 Accept: application/json
 
 ### GET consulta por ID
-GET http://localhost:8080/api/consultas/14
+GET http://localhost:8080/api/consultas/1
 Accept: application/json
 
 ### POST criar nova consulta

@@ -1,5 +1,3 @@
-DELIMITER //
-
 CREATE TRIGGER before_insert_consultas
 BEFORE INSERT ON consulta
 FOR EACH ROW
@@ -14,6 +12,3 @@ BEGIN
 
     SET NEW.preco_consulta = precoConsulta;
 END;
-//
-
-DELIMITER ;
