@@ -1,6 +1,5 @@
 # Sistema para a Clínica de Fisioterapia Interfision
 
-teste teste renan testando
 
 Este é um sistema backend desenvolvido para gerenciar os processos administrativos da clínica de fisioterapia *Interfision*. Ele inclui funcionalidades como gerenciamento de pacientes, profissionais, consultas e especialidades.
 
