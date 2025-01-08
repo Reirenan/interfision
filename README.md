@@ -99,5 +99,5 @@ Contribuições são bem-vindas! Para contribuir, siga os passos abaixo:
 
 ## Autor e Licença
 
-**Autor**: Reirenan  
+**Autor**: Renan, Valéria e João Mateus
 **Licença**: MIT
